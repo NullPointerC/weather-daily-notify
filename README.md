@@ -90,3 +90,7 @@ schedule:
 ## License
 
 [MIT](LICENSE)
+
+---
+
+<p align="center">Powered by <strong>DeepSeek-V4-Pro</strong></p>

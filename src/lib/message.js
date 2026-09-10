@@ -69,10 +69,7 @@ export function buildMessage(weather, config) {
 }
 
 function formatTz(iso) {
-  const d = new Date(iso);
-  const utcMin = d.getUTCHours() * 60 + d.getUTCMinutes();
-  const bjMin = (utcMin + 480) % 1440; // +8h
-  const h = Math.floor(bjMin / 60);
-  const m = bjMin % 60;
-  return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
+  // Open-Meteo 已按 timezone=Asia/Shanghai 返回北京时间，直接取字面 HH:MM 即可，勿再换算。
+  const m = /T(\d{2}):(\d{2})/.exec(iso);
+  return m ? `${m[1]}:${m[2]}` : '';
 }

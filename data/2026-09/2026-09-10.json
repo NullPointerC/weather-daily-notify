@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-10",
+  "location": {
+    "name": "江西师范大学（瑶湖校区）",
+    "address": "江西省南昌市南昌县昌东镇紫阳大道 99 号"
+  },
+  "source": "openmeteo",
+  "current": {
+    "temperature": 22.5,
+    "feelsLike": 21.1,
+    "humidity": 61,
+    "precipitationProb": 0,
+    "windSpeed": 19.8,
+    "weatherText": "晴",
+    "weatherCode": "0"
+  },
+  "daily": {
+    "tempMax": 25.9,
+    "tempMin": 20.8,
+    "sunrise": "2026-09-10T05:58",
+    "sunset": "2026-09-10T18:27"
+  },
+  "aqi": {
+    "aqi": 55,
+    "category": "良",
+    "primary": "PM10"
+  },
+  "indices": null,
+  "alerts": null,
+  "fetchedAt": "2026-09-10T13:49:13.838Z"
+}

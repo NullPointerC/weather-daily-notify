@@ -7,6 +7,8 @@
  *   source: 'openmeteo' | 'qweather',
  *   current: { temperature, feelsLike, humidity, precipitationProb, windSpeed, weatherText, weatherCode },
  *   daily:   { tempMax, tempMin, sunrise, sunset },
+ *   forecast: [{ date, tempMax, tempMin, weatherText, weatherCode }],  // 今/明/后天
+ *   hourly:  [{ time, precipitationProb, weatherCode }],               // 未来逐小时
  *   aqi:     { aqi, category, primary } | null,
  *   indices: { <type>: { name, category, text } } | null,
  *   alerts:  [{ id, type, level, title, text }] | null,
@@ -52,6 +54,8 @@ export async function fetchWeather(config) {
   return {
     ...basis,
     remarks: errors.length ? errors : undefined,
+    forecast: basis.forecast ?? null,
+    hourly: basis.hourly ?? null,
     aqi: enriched?.aqi ?? basis.aqi ?? null,
     indices: enriched?.indices ?? basis.indices ?? null,
     alerts: enriched?.alerts ?? basis.alerts ?? null,

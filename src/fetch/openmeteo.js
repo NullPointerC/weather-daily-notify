@@ -11,7 +11,7 @@ export async function fetchOpenMeteo({ latitude, longitude, timezone }) {
     latitude,
     longitude,
     timezone,
-    forecast_days: '1',
+    forecast_days: '3',
     current: [
       'temperature_2m',
       'relative_humidity_2m',
@@ -26,7 +26,9 @@ export async function fetchOpenMeteo({ latitude, longitude, timezone }) {
       'sunrise',
       'sunset',
       'precipitation_probability_max',
+      'weather_code',
     ].join(','),
+    hourly: ['precipitation_probability', 'weather_code'].join(','),
   });
 
   const resp = await fetch(`${API}?${params.toString()}`, {
@@ -41,6 +43,7 @@ export async function fetchOpenMeteo({ latitude, longitude, timezone }) {
   const data = await resp.json();
   const cur = data.current || {};
   const daily = data.daily || {};
+  const hourly = data.hourly || {};
 
   return {
     source: 'openmeteo',
@@ -59,10 +62,47 @@ export async function fetchOpenMeteo({ latitude, longitude, timezone }) {
       sunrise: first(daily.sunrise) || null,
       sunset: first(daily.sunset) || null,
     },
+    // 多天预报（今/明/后天），供消息里的“明后天预报”使用
+    forecast: buildForecast(daily),
+    // 未来 24 小时逐小时降水概率（仅今天部分保留），供“降雨时段预估”使用
+    hourly: buildHourly(hourly),
     aqi: null,
     indices: null,
     alerts: null,
   };
+}
+
+function buildForecast(daily) {
+  const out = [];
+  const times = daily.time || [];
+  const tmax = daily.temperature_2m_max || [];
+  const tmin = daily.temperature_2m_min || [];
+  const codes = daily.weather_code || [];
+  for (let i = 0; i < times.length; i++) {
+    out.push({
+      date: times[i],
+      tempMax: round1(tmax[i]),
+      tempMin: round1(tmin[i]),
+      weatherText: wmoToText(codes[i]),
+      weatherCode: String(codes[i] ?? ''),
+    });
+  }
+  return out;
+}
+
+function buildHourly(hourly) {
+  const out = [];
+  const times = hourly.time || [];
+  const prob = hourly.precipitation_probability || [];
+  const codes = hourly.weather_code || [];
+  for (let i = 0; i < times.length; i++) {
+    out.push({
+      time: times[i],
+      precipitationProb: prob[i] == null ? null : Number(prob[i]),
+      weatherCode: String(codes[i] ?? ''),
+    });
+  }
+  return out;
 }
 
 function round1(v) {

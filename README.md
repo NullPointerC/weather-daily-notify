@@ -7,6 +7,8 @@
 - 运行环境：GitHub Actions（Node.js 18+，使用内置 `fetch`，无第三方运行时依赖）
 - 默认地点：江西省南昌市南昌县昌东镇紫阳大道 99 号，江西师范大学（瑶湖校区）
 
+![今日天气](https://raw.githubusercontent.com/NullPointerC/weather-daily-notify/main/weather-badge.svg)
+
 ## 特性
 
 - ⏰ 每天北京时间 07:00 自动推送一条天气

@@ -28,6 +28,8 @@ export async function archive(weather, now = new Date()) {
     source: weather.source,
     current: weather.current,
     daily: weather.daily,
+    forecast: weather.forecast ?? null,
+    hourly: weather.hourly ?? null,
     aqi: weather.aqi,
     indices: weather.indices,
     alerts: weather.alerts,

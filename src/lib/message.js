@@ -46,7 +46,9 @@ export function buildMessage(weather, config) {
   // 明后天预报
   const forecastLine = buildForecastLine(weather.forecast);
   if (forecastLine) {
-    lines.push(`- 🔮 ${forecastLine}`);
+    for (const ln of forecastLine.split('\n')) {
+      lines.push(`- ${ln}`);
+    }
   }
 
   // AQI
@@ -135,11 +137,11 @@ function buildForecastLine(forecast) {
   const tomorrow = forecast[1];
   const after = forecast[2];
   if (!tomorrow) return null;
-  const parts = [`明天 ${round(tomorrow.tempMin)}~${round(tomorrow.tempMax)}°C ${tomorrow.weatherText || ''}`];
+  const parts = [`🔮 明天 ${round(tomorrow.tempMin)}~${round(tomorrow.tempMax)}°C ${tomorrow.weatherText || ''}`];
   if (after) {
-    parts.push(`后天 ${round(after.tempMin)}~${round(after.tempMax)}°C ${after.weatherText || ''}`);
+    parts.push(`🔮 后天 ${round(after.tempMin)}~${round(after.tempMax)}°C ${after.weatherText || ''}`);
   }
-  return parts.join(' · ');
+  return parts.join('\n');
 }
 
 function round(v) {

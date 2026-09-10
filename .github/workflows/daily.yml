@@ -1,0 +1,46 @@
+name: 每日天气播报
+
+on:
+  schedule:
+    # UTC 23:00 = 北京时间 07:00（每天一次）
+    - cron: "0 23 * * *"
+  workflow_dispatch: {} # 手动触发
+
+permissions:
+  contents: write # 归档数据需要提交回仓库
+
+concurrency:
+  group: weather-daily
+  cancel-in-progress: false
+
+jobs:
+  weather:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 抓取天气并推送
+        env:
+          SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
+          QW_API_KEY: ${{ secrets.QW_API_KEY }}
+        run: node src/index.js
+
+      - name: 提交历史归档
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "没有归档变更，跳过提交"
+          else
+            git commit -m "chore: archive weather data [skip ci]"
+            git push
+          fi

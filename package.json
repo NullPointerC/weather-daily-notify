@@ -1,0 +1,21 @@
+{
+  "name": "weather-daily-notify",
+  "version": "1.0.0",
+  "description": "每天定时抓取南昌天气，通过 Server酱 推送到微信，并将历史数据归档到仓库",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "weather",
+    "github-actions",
+    "serverchan",
+    "qweather",
+    "open-meteo"
+  ],
+  "license": "MIT"
+}

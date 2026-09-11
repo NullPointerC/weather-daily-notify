@@ -35,8 +35,8 @@ jobs:
 
       - name: 提交历史归档
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "NullPointerC"
+          git config user.email "56420944+NullPointerC@users.noreply.github.com"
           # data/ 与 weather-badge.svg 每次运行都会生成；reports/ 仅在每月 1 号生成
           git add data weather-badge.svg 2>/dev/null || true
           if [ -d reports ]; then git add reports; fi

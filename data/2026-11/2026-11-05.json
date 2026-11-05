@@ -1,0 +1,416 @@
+{
+  "date": "2026-11-05",
+  "location": {
+    "name": "江西师范大学（瑶湖校区）",
+    "address": "江西省南昌市南昌县昌东镇紫阳大道 99 号"
+  },
+  "source": "openmeteo",
+  "current": {
+    "temperature": 19.3,
+    "feelsLike": 18.1,
+    "humidity": 61,
+    "precipitationProb": 75,
+    "windSpeed": 12.4,
+    "weatherText": "晴",
+    "weatherCode": "0"
+  },
+  "daily": {
+    "tempMax": 22.1,
+    "tempMin": 14.6,
+    "sunrise": "2026-11-05T06:30",
+    "sunset": "2026-11-05T17:27"
+  },
+  "forecast": [
+    {
+      "date": "2026-11-05",
+      "tempMax": 22.1,
+      "tempMin": 14.6,
+      "weatherText": "阴",
+      "weatherCode": "3"
+    },
+    {
+      "date": "2026-11-06",
+      "tempMax": 20.9,
+      "tempMin": 16,
+      "weatherText": "阴",
+      "weatherCode": "3"
+    },
+    {
+      "date": "2026-11-07",
+      "tempMax": 18.4,
+      "tempMin": 16,
+      "weatherText": "阵雨",
+      "weatherCode": "81"
+    }
+  ],
+  "hourly": [
+    {
+      "time": "2026-11-05T00:00",
+      "precipitationProb": 75,
+      "weatherCode": "1"
+    },
+    {
+      "time": "2026-11-05T01:00",
+      "precipitationProb": 33,
+      "weatherCode": "0"
+    },
+    {
+      "time": "2026-11-05T02:00",
+      "precipitationProb": 2,
+      "weatherCode": "0"
+    },
+    {
+      "time": "2026-11-05T03:00",
+      "precipitationProb": 0,
+      "weatherCode": "0"
+    },
+    {
+      "time": "2026-11-05T04:00",
+      "precipitationProb": 0,
+      "weatherCode": "0"
+    },
+    {
+      "time": "2026-11-05T05:00",
+      "precipitationProb": 0,
+      "weatherCode": "0"
+    },
+    {
+      "time": "2026-11-05T06:00",
+      "precipitationProb": 0,
+      "weatherCode": "0"
+    },
+    {
+      "time": "2026-11-05T07:00",
+      "precipitationProb": 0,
+      "weatherCode": "0"
+    },
+    {
+      "time": "2026-11-05T08:00",
+      "precipitationProb": 0,
+      "weatherCode": "0"
+    },
+    {
+      "time": "2026-11-05T09:00",
+      "precipitationProb": 0,
+      "weatherCode": "0"
+    },
+    {
+      "time": "2026-11-05T10:00",
+      "precipitationProb": 0,
+      "weatherCode": "0"
+    },
+    {
+      "time": "2026-11-05T11:00",
+      "precipitationProb": 0,
+      "weatherCode": "0"
+    },
+    {
+      "time": "2026-11-05T12:00",
+      "precipitationProb": 0,
+      "weatherCode": "2"
+    },
+    {
+      "time": "2026-11-05T13:00",
+      "precipitationProb": 0,
+      "weatherCode": "2"
+    },
+    {
+      "time": "2026-11-05T14:00",
+      "precipitationProb": 0,
+      "weatherCode": "2"
+    },
+    {
+      "time": "2026-11-05T15:00",
+      "precipitationProb": 0,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-05T16:00",
+      "precipitationProb": 0,
+      "weatherCode": "2"
+    },
+    {
+      "time": "2026-11-05T17:00",
+      "precipitationProb": 0,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-05T18:00",
+      "precipitationProb": 0,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-05T19:00",
+      "precipitationProb": 0,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-05T20:00",
+      "precipitationProb": 2,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-05T21:00",
+      "precipitationProb": 7,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-05T22:00",
+      "precipitationProb": 14,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-05T23:00",
+      "precipitationProb": 20,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T00:00",
+      "precipitationProb": 26,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T01:00",
+      "precipitationProb": 31,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T02:00",
+      "precipitationProb": 35,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T03:00",
+      "precipitationProb": 37,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T04:00",
+      "precipitationProb": 39,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T05:00",
+      "precipitationProb": 39,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T06:00",
+      "precipitationProb": 39,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T07:00",
+      "precipitationProb": 38,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T08:00",
+      "precipitationProb": 37,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T09:00",
+      "precipitationProb": 35,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T10:00",
+      "precipitationProb": 33,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T11:00",
+      "precipitationProb": 31,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T12:00",
+      "precipitationProb": 30,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T13:00",
+      "precipitationProb": 29,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T14:00",
+      "precipitationProb": 27,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T15:00",
+      "precipitationProb": 24,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T16:00",
+      "precipitationProb": 21,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T17:00",
+      "precipitationProb": 18,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T18:00",
+      "precipitationProb": 15,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-06T19:00",
+      "precipitationProb": 11,
+      "weatherCode": "2"
+    },
+    {
+      "time": "2026-11-06T20:00",
+      "precipitationProb": 8,
+      "weatherCode": "2"
+    },
+    {
+      "time": "2026-11-06T21:00",
+      "precipitationProb": 6,
+      "weatherCode": "1"
+    },
+    {
+      "time": "2026-11-06T22:00",
+      "precipitationProb": 4,
+      "weatherCode": "1"
+    },
+    {
+      "time": "2026-11-06T23:00",
+      "precipitationProb": 2,
+      "weatherCode": "0"
+    },
+    {
+      "time": "2026-11-07T00:00",
+      "precipitationProb": 0,
+      "weatherCode": "1"
+    },
+    {
+      "time": "2026-11-07T01:00",
+      "precipitationProb": 0,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-07T02:00",
+      "precipitationProb": 0,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-07T03:00",
+      "precipitationProb": 3,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-07T04:00",
+      "precipitationProb": 8,
+      "weatherCode": "3"
+    },
+    {
+      "time": "2026-11-07T05:00",
+      "precipitationProb": 16,
+      "weatherCode": "51"
+    },
+    {
+      "time": "2026-11-07T06:00",
+      "precipitationProb": 28,
+      "weatherCode": "55"
+    },
+    {
+      "time": "2026-11-07T07:00",
+      "precipitationProb": 43,
+      "weatherCode": "80"
+    },
+    {
+      "time": "2026-11-07T08:00",
+      "precipitationProb": 57,
+      "weatherCode": "80"
+    },
+    {
+      "time": "2026-11-07T09:00",
+      "precipitationProb": 68,
+      "weatherCode": "55"
+    },
+    {
+      "time": "2026-11-07T10:00",
+      "precipitationProb": 78,
+      "weatherCode": "80"
+    },
+    {
+      "time": "2026-11-07T11:00",
+      "precipitationProb": 86,
+      "weatherCode": "81"
+    },
+    {
+      "time": "2026-11-07T12:00",
+      "precipitationProb": 92,
+      "weatherCode": "81"
+    },
+    {
+      "time": "2026-11-07T13:00",
+      "precipitationProb": 95,
+      "weatherCode": "81"
+    },
+    {
+      "time": "2026-11-07T14:00",
+      "precipitationProb": 98,
+      "weatherCode": "80"
+    },
+    {
+      "time": "2026-11-07T15:00",
+      "precipitationProb": 99,
+      "weatherCode": "81"
+    },
+    {
+      "time": "2026-11-07T16:00",
+      "precipitationProb": 100,
+      "weatherCode": "80"
+    },
+    {
+      "time": "2026-11-07T17:00",
+      "precipitationProb": 100,
+      "weatherCode": "80"
+    },
+    {
+      "time": "2026-11-07T18:00",
+      "precipitationProb": 100,
+      "weatherCode": "80"
+    },
+    {
+      "time": "2026-11-07T19:00",
+      "precipitationProb": 100,
+      "weatherCode": "80"
+    },
+    {
+      "time": "2026-11-07T20:00",
+      "precipitationProb": 100,
+      "weatherCode": "80"
+    },
+    {
+      "time": "2026-11-07T21:00",
+      "precipitationProb": 98,
+      "weatherCode": "80"
+    },
+    {
+      "time": "2026-11-07T22:00",
+      "precipitationProb": 95,
+      "weatherCode": "53"
+    },
+    {
+      "time": "2026-11-07T23:00",
+      "precipitationProb": 90,
+      "weatherCode": "51"
+    }
+  ],
+  "aqi": {
+    "aqi": 24,
+    "category": "优",
+    "primary": "NA"
+  },
+  "indices": null,
+  "alerts": null,
+  "fetchedAt": "2026-11-05T02:46:43.876Z"
+}

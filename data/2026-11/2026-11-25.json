@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-25",
+  "location": {
+    "name": "江西师范大学（瑶湖校区）",
+    "address": "江西省南昌市南昌县昌东镇紫阳大道 99 号"
+  },
+  "source": "qweather",
+  "current": {
+    "temperature": 13,
+    "feelsLike": 10,
+    "humidity": 64,
+    "precipitationProb": 0,
+    "windSpeed": 8,
+    "weatherText": "阴",
+    "weatherCode": "104"
+  },
+  "daily": {
+    "tempMax": null,
+    "tempMin": null,
+    "sunrise": null,
+    "sunset": null
+  },
+  "forecast": null,
+  "hourly": null,
+  "aqi": {
+    "aqi": 116,
+    "category": "轻度污染",
+    "primary": "PM2.5"
+  },
+  "indices": null,
+  "alerts": [
+    {
+      "id": "10124010320261125054500839108466",
+      "type": "大雾",
+      "level": "Moderate",
+      "title": "南昌县气象台2026年11月25日05时45分发布大雾黄色预警信号。",
+      "text": "南昌县气象台2026年11月25日05时45分发布大雾黄色预警信号：预计未来12小时内，我县的部分地区可能出现能见度小于500米的雾，请注意防范。"
+    }
+  ],
+  "fetchedAt": "2026-11-25T05:01:50.387Z"
+}
